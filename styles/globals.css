@@ -1,26 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/cubano');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Sofia Pro', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Cubano', sans-serif;
+}
+
+.btn{
+  @apply py-2 cursor-pointer px-4 bg-slate-200 hover:bg-slate-300 transition rounded shadow border w-fit flex items-center justify-center gap-1;
 }

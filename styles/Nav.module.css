@@ -1,0 +1,11 @@
+.nav{
+    @apply py-4 px-6 bg-gray-900 text-white flex items-center justify-end md:justify-center;
+}
+
+.nav ul{
+    @apply flex items-center justify-center gap-6;
+}
+
+.nav ul li {
+    @apply hover:border-white border-b-2 border-slate-900 transition text-sm;
+}
